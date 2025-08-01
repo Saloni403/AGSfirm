@@ -439,6 +439,7 @@ transform: translateY(0);
         background-color: #fff;
         border-radius: 20px;
         margin: 0 0.75rem;
+        
       }
 
       .aopcard:hover  .aopimg img {
@@ -447,8 +448,13 @@ transform: translateY(0);
       .aop h5{
         /* color: black; */
         color: goldenrod;
-        font-weight: 600;
         text-align: center;
+      }
+      @media(max-width:576px){
+         .aop h5{
+       font-size: 1rem;
+       padding: 0 5px;
+      }
       }
       .aopimg{
           border-radius: 20px 20px 0 0;
