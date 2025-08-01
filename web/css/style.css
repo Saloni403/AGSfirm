@@ -18,6 +18,29 @@ body{
     background-color: #000;
     color: #fff;
 }
+.btmdes{
+position: relative;
+padding-bottom: 1rem;
+}
+.btmdes::before{
+    content: "....";
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: goldenrod;
+font-size: 4rem;
+}
+/* .btmdes::after{
+    content: "";
+    position: absolute;
+    bottom: -34%;
+    left: 50%;
+    transform: translateX(calc(-50% + 50px));
+    width: 50px;
+    height: 4px;
+    background-color: goldenrod;
+} */
  button{
    padding: 0.75rem 2rem;
    border-radius: 10px;
@@ -138,8 +161,9 @@ button span{
 header{
     border-bottom:  2px solid goldenrod;
    border-top:  2px solid goldenrod;
-   
-  
+   z-index: 990;
+  position: sticky;
+  top: 0;
 }
 header ul li a{
     padding-bottom: 5px;
@@ -159,7 +183,7 @@ header ul li:hover a{
     position: fixed;
     top: 0;
     right: -350px;
-    z-index: 99;
+    z-index: 992;
     padding:2rem 1rem;
     transition: 0.3s;
 }
@@ -191,11 +215,15 @@ header ul li:hover a{
     
 }
 
-.menu ul li a:active a i.icn{
+.menu ul li a:hover  i.icn{
    transform: scale(1.3);
 }
-.menu ul li a:active{
+.menu ul li a:hover{
    color: goldenrod;
+}
+
+.activeslider{
+    color: goldenrod;
 }
 
 /* banner */
@@ -286,7 +314,7 @@ justify-content: center;
 }
 .aboutsec .imgdiv{
     border: 2px solid rgb(218, 165, 32);
-    border-radius: 50% 0 50px 0;
+    border-radius: 0 0 50% 50%;
     padding: 2rem;
     background-color: goldenrod;
 }
@@ -338,7 +366,31 @@ justify-content: center;
       }
       .wcutext h4{
        text-align: center;
+       position: relative;
+       padding-bottom: 10px;
+      
       }
+      .wcutext h4::before{
+       content: "";
+       position: absolute;
+       bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+       height: 2px;
+       width: 40%;
+       background-color: #fff;
+      }
+       .wcutext h4::after{
+       content: "";
+       position: absolute;
+       bottom: 0;
+      left: 50%;
+      /* transform: translateX(calc(-50% + 50%)); */
+       height: 4px;
+       width: 40%;
+       background-color: #fff;
+      }
+     
       .clrdiv{
         position: absolute;
         height: 400px;
@@ -393,7 +445,9 @@ transform: translateY(0);
         transform: scale(1.2);
       }
       .aop h5{
-        color: black;
+        /* color: black; */
+        color: goldenrod;
+        font-weight: 600;
         text-align: center;
       }
       .aopimg{

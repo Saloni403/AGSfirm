@@ -10,14 +10,6 @@ close.addEventListener("click",()=>{
 })
 
 
-let menulink = document.querySelectorAll(".menu ul li a")
-menulink.forEach(link =>{
-    link.addEventListener("click",function(e){
-    //    e.preventDefault();
-        menulink.forEach(i => i.classList.remove("active"));
-        link.classList.add("active")
-    })
-})
 
 
 function closeinstantdiv(){
