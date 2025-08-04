@@ -24,3 +24,29 @@ function declineTerms() {
       window.location.href = "index.html"; // change this to your desired page
     }
   }
+
+
+
+  // login
+
+
+
+  function showSignin(){
+    document.querySelector("#signin").style.display="block"
+     document.querySelector("#login").style.display="none"
+     document.querySelector("body").style.overflow="hidden"
+  }
+  function showLogin(){
+    document.querySelector("#login").style.display="block"
+     document.querySelector("#signin").style.display="none"
+     document.querySelector("body").style.overflow="hidden"
+  }
+
+  document.querySelector(".closelogin").addEventListener("click",()=>{
+     document.querySelector("#login").style.display="none"
+document.querySelector("body").style.overflow="unset"
+  })
+  document.querySelector(".closesignin").addEventListener("click",()=>{
+     document.querySelector("#signin").style.display="none"
+document.querySelector("body").style.overflow="unset"
+  })
