@@ -524,23 +524,8 @@ footer .icons i:hover{
    color: goldenrod;
 }
 
-@media(max-width:768px){
-    .qlinks{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .qlinks li{
-    margin-right: 0.5rem;
-      margin-top: 0.5rem;
-}
-}
-@media (min-width: 768px) {
-  .qlinks {
-    flex-wrap: nowrap;
-    justify-content: space-between; /* or evenly/around as needed */
-  }
-}
+
+
 @media(max-width:576px){
   .qlinks a{
     font-size: 1rem;
@@ -615,4 +600,109 @@ footer .icons i:hover{
    .smallbanner h1{
     font-size: 1.75rem;
 }
+}
+
+/* about top cards */
+.abouttopcardbotm{
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  top:50%;
+  transform: translateY(-50%);
+}
+.abouttopcard{
+  background-color: #fff;
+}
+.atopcard{
+  background-color: #000;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  box-shadow: 5px 5px 10px #000000c8;
+}
+.atopimg{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 4px solid goldenrod;
+  padding: 0.5rem;
+  background-color: #000;
+}
+.atopcard p{
+  color: goldenrod;
+}
+.imgdiv2{
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* vision */
+.visioncard{
+  /* background-color: #ffffffd8; */
+   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+/* backdrop-filter: blur(10px);    */
+}
+.vin h2{
+  position: relative;
+   padding-bottom: 10px;
+}
+.vin h2::before{
+    content: "";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    background-color: goldenrod;
+    bottom: 0;
+    left: 0;
+}
+.vin h2::after{
+    content: "";
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    background-color: goldenrod;
+    bottom: 0;
+    left: 50px;
+}
+.vin{
+  position: relative;
+  /* color: #000; */
+}
+.vin::before{
+content: '"'; /* double inverted comma */
+  font-size: 4rem; /* make it big */
+  font-weight: bold;
+  color: #fff; /* optional styling */
+  margin-right: 0.5rem;
+ 
+ vertical-align: top;
+  line-height: 1;
+  display: inline-block;
+}
+.vin::after{
+content: '"'; /* double inverted comma */
+  font-size: 4rem; /* make it big */
+  font-weight: bold;
+  color: #fff; /* optional styling */
+  margin-right: 0.5rem;
+position: absolute;
+right: 0;
+
+  line-height: 1;
+  display: inline-block;
+}
+
+/* faq  */
+.fqcard span{
+color: goldenrod;
+font-size: 1.2rem;
+}
+@media(max-width:576px){
+  .fqcard span{
+color: goldenrod;
+font-size: 1rem;
+}
+}
+.fqcard p{
+  margin-bottom: 5px;
 }
