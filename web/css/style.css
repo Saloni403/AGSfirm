@@ -106,7 +106,7 @@ button span{
     background-color:black ;
     color: #fff;
     width: 50%;
- 
+ height: 98%;
  padding: 2rem;
   border-radius: 20px;
   border: 2px solid white;
@@ -431,10 +431,12 @@ transform: translateY(0);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        background-attachment: fixed;
       }
       .aopmaindiv{
         background-color: rgba(0, 0, 0, 0.825);
       }
+     
       .aopcard{
         background-color: #fff;
         border-radius: 20px;
@@ -454,6 +456,9 @@ transform: translateY(0);
          .aop h5{
        font-size: 1rem;
        padding: 0 5px;
+      }
+       .aopmaindiv{
+        background-color: rgba(0, 0, 0, 0.625);
       }
       }
       .aopimg{
@@ -480,7 +485,10 @@ transform: translateY(0);
         justify-content: center;
         flex-direction: column;
         width: 60%;
-        /* background-color: #000; */
+        background-color: rgba(218, 165, 32, 0.425);
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        border-radius: 20px;
       }
       .contactus form input, .contactus form textarea{
        width: 100%;
@@ -515,6 +523,24 @@ footer .icons i:hover{
 .qlinks a:hover{
    color: goldenrod;
 }
+
+@media(max-width:768px){
+    .qlinks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .qlinks li{
+    margin-right: 0.5rem;
+      margin-top: 0.5rem;
+}
+}
+@media (min-width: 768px) {
+  .qlinks {
+    flex-wrap: nowrap;
+    justify-content: space-between; /* or evenly/around as needed */
+  }
+}
 @media(max-width:576px){
   .qlinks a{
     font-size: 1rem;
@@ -526,3 +552,67 @@ footer .icons i:hover{
         padding: 1rem;
         text-align: center;
       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* About page */
+      .smallbanner{
+        background-image: url(../images/banner1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+       
+      }
+
+      .smallbannerdiv{
+        background-color: #00000071;
+        height: 100%;
+        width: 100%;
+         padding: 100px 0;
+      } 
+
+      .smallbanner h1{
+        font-size: 4rem;
+      }
+      
+@media(min-width:1200px){
+   .smallbanner h1{
+    font-size: 6rem;
+} 
+}
+@media(max-width:576px){
+   .smallbanner h1{
+    font-size: 1.75rem;
+}
+}
