@@ -706,3 +706,81 @@ font-size: 1rem;
 .fqcard p{
   margin-bottom: 5px;
 }
+
+/* contact us */
+.cucd{
+  background-color: goldenrod;
+  /* backdrop-filter: blur(10px); */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  position: relative;
+  padding: 3rem 0;
+}
+.cuicn{
+position: absolute;
+top: 0;
+transform: translateY(-50%);
+border-radius: 50%;
+}
+.cuicn i{
+font-size: 2rem;
+color: white;
+border: 2px solid #fff;
+padding: 0.5rem 0.75rem;
+border-radius: 50%;
+background-color: #000;
+}
+.cucd p{
+margin-bottom: 0;
+}
+/* working hr */
+.whr{
+  background-color: #fff;
+}
+.whr table{
+  background-color: rgb(29, 0, 0);
+  border-radius: 10px;
+   /* border-collapse: collapse; */
+  width: 100%;
+}
+.whr table th{
+  font-size: 1.5rem;
+}
+.whr table tr td,.whr table tr th{
+  padding: 1rem ;
+}
+.whr table tr:first-child, .whr table tr:last-child {
+  background-color: #530202;  /* or any color you want */
+  color: #fff;
+}
+table tr td:last-child{
+  text-align: end;
+
+}
+
+@media(min-width:1440px){
+  .whr table th{
+  font-size: 2rem;
+}
+}
+@media(max-width:576px){
+  .whr table th{
+  font-size: 1rem;
+}
+table tr td:first-child{
+  padding-right: 0;
+  padding-right: 0.5rem;
+  font-size: 0.75rem;
+}
+table tr td:last-child{
+padding-left: 0;
+padding-right: 0.5rem;
+ font-size: 0.75rem;
+}
+}
