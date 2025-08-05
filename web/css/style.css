@@ -14,9 +14,13 @@ ul{
     margin-bottom: 0;
     padding-left: 0;
 }
+.activecursor{
+  cursor: pointer;
+}
 body{
     background-color: #000;
     color: #fff;
+    overflow-x: hidden;
 }
 .btmdes{
 position: relative;
@@ -145,7 +149,9 @@ button span{
 } */
 
 /* header */
-
+.topnav p span:hover ,.topnav-icons i:hover {
+color: goldenrod;
+}
 .topnav p{
     font-size: 1.1rem;
     font-weight: 500;
@@ -677,8 +683,13 @@ padding: 0.5rem;
   left: 50%;
   transform: translate(-50%,-50%);
   border: 4px solid goldenrod;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #000;
+  height: 80px;
+  width: 80px;
 }
 .atopcard p{
   color: goldenrod;

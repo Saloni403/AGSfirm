@@ -17,13 +17,14 @@
     <link rel="stylesheet" href="web/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
     <!-- instant div -->
-    <!-- <section class="instdiv">
+    <section class="instdiv" onclick="closeinstantdiv()">
       <div class="inst">
-        <div class="instclose" onclick="closeinstantdiv()">
+        <div class="instclose" >
           <p>X</p>
         </div>
         <p>
@@ -59,7 +60,7 @@
           </button>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- header -->
     <div class="topnav py-2 d-none d-md-block">
@@ -67,12 +68,12 @@
         <div class="row">
           <div class="d-flex align-items-center justify-content-between">
             <p class="mb-0">
-              <i class="bi bi-telephone-fill"></i> +91 8368282220 |
-              <i class="bi bi-envelope-fill"></i> contactus@asgadvocates.com
+              <span class="activecursor" onclick="location.href='tel:+918368282220'"><i class="bi bi-telephone-fill" ></i> +91 8368282220</span> |
+              <span class="activecursor" onclick="location.href='mailto:contactus@asgadvocates.com'"><i class="bi bi-envelope-fill" ></i> contactus@asgadvocates.com</span>
             </p>
             <div class="topnav-icons">
-              <i class="bi bi-instagram me-3"></i>
-              <i class="bi bi-whatsapp"></i>
+              <i class="bi bi-instagram me-3 activecursor" onclick="location.href='//www.instagram.com/advocatesahilgandass?igsh=MXZua3pjaG12M2Z5MQ=='"></i>
+              <i class="bi bi-whatsapp activecursor" onclick="location.href='//wa.me/918368282220'"></i>
             </div>
           </div>
         </div>
@@ -84,9 +85,10 @@
         <div class="row d-flex align-items-center justify-content-between">
           <div class="col-lg-2 col-md-4 col-5">
             <img
-              src="web/images/asglogo-removebg-preview.png"
-              class="img-fluid"
+              src="web/images/Equity_law_chambers-removebg-preview.png"
+              class="img-fluid activecursor"
               alt=""
+              onclick="location.href='index.html'"
             />
           </div>
           <div class="  col-xl-7 col-lg-8  d-none d-lg-block">
@@ -94,8 +96,8 @@
               <li><a href="index.html" class="activenav">HOME</a></li>
               <li><a href="about.html">ABOUT US</a></li>
               <li><a href="practises.html">AREA OF PRACTISE</a></li>
-              <li><a href="debtsettlement.html">Debt Settlement</a></li>
-              <li><a href="#" onclick="showLogin()">Login</a></li>
+              <li><a href="debtsettlement.html">DEBT OF SETTLEMENT</a></li>
+              <li><a href="#" onclick="showLogin()">LOGIN</a></li>
               <li><a href="contact.html">CONTACT US</a></li>
             </ul>
           </div>
@@ -115,13 +117,13 @@
         <p>X</p>
       </div>
       <div class="mt-2 mb-5">
-        <img src="web/images/asglogo-removebg-preview.png" width="200" alt="" />
+        <img src="web/images/Equity_law_chambers-removebg-preview.png" class=" activecursor" onclick="location.href='index.html'" width="200" alt="" />
         <p>
           <i class="bi bi-geo-alt-fill"></i> Shop no 106, Vpo Village Gadoli
           Khurd, Gurugram Haryana 122001.
         </p>
-        <p><i class="bi bi-telephone-fill"></i> +91 8368282220</p>
-        <p><i class="bi bi-envelope-fill"></i> contactus@asgadvocates.com</p>
+         <p class="activecursor" onclick="location.href='tel:+918368282220'"><i class="bi bi-telephone-fill"></i> +91 8368282220</p>
+        <p class="activecursor" onclick="location.href='mailto:contactus@asgadvocates.com'"><i class="bi bi-envelope-fill"></i> contactus@asgadvocates.com</p>
       </div>
       <ul>
         <li>
@@ -153,17 +155,17 @@
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active position-relative">
+          <div class="carousel-item active position-relative activecursor" onclick="location.href='contact.html'">
             <img src="web/images/banner1.jpg" class="d-block w-100" alt="..." />
             <div class="innerdiv">
-              <div class="outerdiv">
+              <div class="outerdiv" >
                 <h1>Welcome To ASG</h1>
                 <p>Where Making a Difference is Our Practice</p>
                 <button><span>Contact Now</span></button>
               </div>
             </div>
           </div>
-          <div class="carousel-item position-relative">
+          <div class="carousel-item position-relative activecursor" onclick="location.href='contact.html'">
             <img src="web/images/banner2.jpg" class="d-block w-100" alt="..." />
             <div class="innerdiv">
               <div class="outerdiv">
@@ -173,7 +175,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item position-relative">
+          <div class="carousel-item position-relative activecursor" onclick="location.href='contact.html'">
             <img src="web/images/banner3.jpg" class="d-block w-100" alt="..." />
             <div class="innerdiv">
               <div class="outerdiv">
@@ -208,14 +210,16 @@
     </section>
 
     <!-- About us -->
-    <section class="aboutsec my-sm-5">
+    <section class="aboutsec my-sm-5  " >
       <div class="container py-5">
-        <div class="btmdes text-center">
+        
+        <div class="btmdes text-center "  data-aos="fade-up">
           <h1 >The Law is hard, <span class="gdntext">but it is the Law</span></h1>
           <p>Satyamev jayate</p>
         </div>
+       
         <div class="row mt-3 d-flex align-items-center justify-content-between">
-          <div class="col-lg-6 px-xl-5 ">
+          <div class="col-lg-6 px-xl-5 " data-aos="fade-right">
             <h2>About Us</h2>
             <p>
               At ASG, we believe that the practice of law goes beyond simply
@@ -235,7 +239,7 @@
               and providing unwavering support.
             </p>
           </div>
-          <div class="col-lg-6 mt-lg-0 mt-3 d-flex align-items-center justify-content-center">
+          <div class="col-lg-6 mt-lg-0 mt-3 d-flex align-items-center justify-content-center" data-aos="fade-left">
             <div class="imgdiv" >
               <img src="web/images/advocate9890.logowik.com_-removebg-preview.png" class="img-fluid" alt="">
             </div>
@@ -245,14 +249,14 @@
     </section>
 
     <!-- Why choose us -->
-     <section class="my-5">
+     <section class="my-5 ">
       <div class="container">
-         <div class="btmdes text-center">
+         <div class="btmdes text-center" data-aos="fade-up">
           <h1 >Why <span class="gdntext">Choose Us</span></h1>
           <p>Our firm was built on the foundation of trust, integrity, and a relentless commitment to excellence.</p>
         </div>
         <div class="row  mt-3 gy-5">
-          <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
             <div class="wcucard">
               <div class="position-relative divvv">
               <div class="wcumg">
@@ -269,7 +273,7 @@
             </div>
           </div>
 
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
             <div class="wcucard">
               <div class="position-relative divvv">
               <div class="wcumg">
@@ -286,7 +290,7 @@
             </div>
           </div>
 
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
             <div class="wcucard">
               <div class="position-relative divvv">
               <div class="wcumg">
@@ -303,7 +307,7 @@
             </div>
           </div>
 
-           <div class="col-xl-3 col-lg-4 col-sm-6">
+           <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
             <div class="wcucard">
               <div class="position-relative divvv">
               <div class="wcumg">
@@ -326,10 +330,10 @@
      </section>
      
      <!-- AREA OF PRACTISE -->
-      <section class="aop  overflow-hidden">
+      <section class="aop  ">
         <div class="aopmaindiv py-5">
         <div class="container">
-            <div class="btmdes text-center ">
+            <div class="btmdes text-center " data-aos="fade-up">
           <h1>Area <span class="gdntext">Of Practise </span></h1>
           <p>Our firm was built on the foundation of trust, integrity, and a relentless commitment to excellence.</p>
         </div>
@@ -483,10 +487,10 @@
       </section>
 
       <!-- contact us -->
-       <section class="contactus" >
+       <section class="contactus  "  >
        <div style="background-color: rgba(0, 0, 0, 0.353); padding: 2rem 0;">
         <div class="container">
-           <div class="btmdes  text-center ">
+           <div class="btmdes  text-center " data-aos="fade-up">
           <h1>Contact <span class="gdntext">Us</span></h1>
           <p>We are here to help. If you are looking for a legal partner who is committed to making a difference, reach out to us today.</p>
         </div>
@@ -496,7 +500,7 @@
                 <img src="web/images/banner3.jpg" class="img-fluid" alt="">
               </div>
             </div> -->
-            <div class="w-100 mt-3  d-flex align-items-center justify-content-center">
+            <div class="w-100 mt-3  d-flex align-items-center justify-content-center " data-aos="fade-left">
               <form action=""  >
                 <div class="d-flex align-items-center justify-content-between w-100">
                 <input class="me-sm-3 me-2 " type="text" placeholder="Name*">
@@ -520,14 +524,17 @@
           <div class="container">
             <div class="row d-flex align-items-center justify-content-center">
               <div class="col-lg-2 col-6 d-md-block d-flex align-items-center justify-content-center">
-                <img src="web/images/asglogo-removebg-preview.png" class="img-fluid" alt="">
+                <img src="web/images/Equity_law_chambers-removebg-preview.png" class="img-fluid activecursor"
+              alt=""
+              onclick="location.href='index.html'">
               </div>
               <div class="col-lg-7 mt-5 mt-lg-0">
                 <div class="icons d-flex align-items-center justify-content-center">
-                  <i class="bi bi-telephone-fill"></i>
-                  <i class="bi bi-envelope-fill"></i>
-                  <i class="bi bi-instagram"></i>
-                  <i class="bi bi-whatsapp"></i>
+                  
+                  <i class="bi bi-telephone-fill activecursor" onclick="location.href='tel:+918368282220'"></i>
+                  <i class="bi bi-envelope-fill activecursor" onclick="location.href='mailto:contactus@asgadvocates.com'"></i>
+                  <i class="bi bi-instagram activecursor" onclick="location.href='//www.instagram.com/advocatesahilgandass?igsh=MXZua3pjaG12M2Z5MQ=='"></i>
+                  <i class="bi bi-whatsapp activecursor" onclick="location.href='//wa.me/918368282220'"></i>
                 </div>
                 <div class="mt-sm-5 mt-3">
                   <ul class="qlinks d-flex align-items-center justify-content-sm-evenly justify-content-between" >
@@ -569,7 +576,7 @@
 
 
         <!-- login form -->
-         <section class="loginfrm" id="login">
+         <section class="loginfrm" id="login" >
           <div class="lgdata h-100 d-flex align-items-center justify-content-center flex-column ">
              
             <div>
@@ -589,7 +596,7 @@
          </section>
 
           <!-- signup form -->
-         <section class="loginfrm" id="signin">
+         <section class="loginfrm" id="signin" >
           <div class="lgdata h-100 d-flex align-items-center justify-content-center flex-column ">
              
             <div>
@@ -619,6 +626,9 @@
     <script src="web/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

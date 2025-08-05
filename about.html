@@ -29,43 +29,45 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body>
+  <body >
     <!-- header -->
-    <div class="topnav py-2 d-none d-md-block">
+     <div class="topnav py-2 d-none d-md-block">
       <div class="container">
         <div class="row">
           <div class="d-flex align-items-center justify-content-between">
             <p class="mb-0">
-              <i class="bi bi-telephone-fill"></i> +91 8368282220 |
-              <i class="bi bi-envelope-fill"></i> contactus@asgadvocates.com
+              <span class="activecursor" onclick="location.href='tel:+918368282220'"><i class="bi bi-telephone-fill" ></i> +91 8368282220</span> |
+              <span class="activecursor" onclick="location.href='mailto:contactus@asgadvocates.com'"><i class="bi bi-envelope-fill" ></i> contactus@asgadvocates.com</span>
             </p>
             <div class="topnav-icons">
-              <i class="bi bi-instagram me-3"></i>
-              <i class="bi bi-whatsapp"></i>
+              <i class="bi bi-instagram me-3 activecursor" onclick="location.href='//www.instagram.com/advocatesahilgandass?igsh=MXZua3pjaG12M2Z5MQ=='"></i>
+              <i class="bi bi-whatsapp activecursor" onclick="location.href='//wa.me/918368282220'"></i>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <header class="py-2 bg-black">
+    <header class="py-2  bg-black">
       <div class="container">
         <div class="row d-flex align-items-center justify-content-between">
           <div class="col-lg-2 col-md-4 col-5">
             <img
-              src="web/images/asglogo-removebg-preview.png"
-              class="img-fluid"
+              src="web/images/Equity_law_chambers-removebg-preview.png"
+              class="img-fluid activecursor"
               alt=""
+              onclick="location.href='index.html'"
             />
           </div>
-          <div class="col-xl-7 col-lg-8 d-none d-lg-block">
+          <div class="  col-xl-7 col-lg-8  d-none d-lg-block">
             <ul class="d-flex align-items-center justify-content-between">
               <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html" class="activenav">ABOUT US</a></li>
+              <li><a href="about.html"  class="activenav">ABOUT US</a></li>
               <li><a href="practises.html">AREA OF PRACTISE</a></li>
-              <li><a href="debtsettlement.html">Debt Settlement</a></li>
-              <li><a href="login.html">Login</a></li>
+              <li><a href="debtsettlement.html">DEBT OF SETTLEMENT</a></li>
+              <li><a href="#" onclick="showLogin()">LOGIN</a></li>
               <li><a href="contact.html">CONTACT US</a></li>
             </ul>
           </div>
@@ -85,42 +87,32 @@
         <p>X</p>
       </div>
       <div class="mt-2 mb-5">
-        <img src="web/images/asglogo-removebg-preview.png" width="200" alt="" />
+        <img src="web/images/Equity_law_chambers-removebg-preview.png" class=" activecursor" onclick="location.href='index.html'" width="200" alt="" />
         <p>
           <i class="bi bi-geo-alt-fill"></i> Shop no 106, Vpo Village Gadoli
           Khurd, Gurugram Haryana 122001.
         </p>
-        <p><i class="bi bi-telephone-fill"></i> +91 8368282220</p>
-        <p><i class="bi bi-envelope-fill"></i> contactus@asgadvocates.com</p>
+         <p class="activecursor" onclick="location.href='tel:+918368282220'"><i class="bi bi-telephone-fill"></i> +91 8368282220</p>
+        <p class="activecursor" onclick="location.href='mailto:contactus@asgadvocates.com'"><i class="bi bi-envelope-fill"></i> contactus@asgadvocates.com</p>
       </div>
       <ul>
         <li>
-          <a href="index.html"
-            ><i class="icn bi bi-house-door-fill"></i> HOME</a
-          >
+          <a href="index.html" ><i class="icn bi bi-house-door-fill"></i> HOME</a>
         </li>
         <li>
-          <a href="about.html" class="activeslider"
-            ><i class="icn bi bi-person-fill"></i> ABOUT US</a
-          >
+          <a href="about.html" class="activeslider"><i class="icn bi bi-person-fill"></i> ABOUT US</a>
         </li>
         <li>
-          <a href="practises.html"
-            ><i class="icn bi bi-award-fill"></i> AREA OF PRACTISE</a
-          >
+          <a href="practises.html"><i class="icn bi bi-award-fill"></i> AREA OF PRACTISE</a>
+        </li>
+         <li>
+          <a href="debtsettlement.html"><i class="bi bi-hand-thumbs-up-fill"></i> DEBT SETTLEMENT</a>
+        </li>
+         <li>
+          <a href="#" onclick="showLogin()"><i class="bi bi-substack"></i> LOGIN</a>
         </li>
         <li>
-          <a href="debtsettlement.html"
-            ><i class="bi bi-hand-thumbs-up-fill"></i> DEBT SETTLEMENT</a
-          >
-        </li>
-        <li>
-          <a href="login.html"><i class="bi bi-substack"></i> LOGIN</a>
-        </li>
-        <li>
-          <a href="contact.html"
-            ><i class="icn bi bi-bell-fill"></i> CONTACT US</a
-          >
+          <a href="contact.html"><i class="icn bi bi-bell-fill"></i> CONTACT US</a>
         </li>
       </ul>
     </div>
@@ -144,7 +136,8 @@
           <div class="col-lg-3 col-6 position-relative">
             <div class="atopcard">
               <div class="atopimg">
-                <img src="web/images/WCU1.png" alt="" />
+                <!-- <img src="web/images/WCU1.png" alt="" /> -->
+                 <i class="bi bi-brush-fill" style="color: goldenrod; font-size: 2rem;"></i>
               </div>
               <div class="atoptext">
                 <h2>154</h2>
@@ -156,11 +149,12 @@
           <div class="col-lg-3 col-6 position-relative">
             <div class="atopcard">
               <div class="atopimg">
-                <img src="web/images/WCU1.png" alt="" />
+                <!-- <img src="web/images/WCU1.png" alt="" /> -->
+                 <i class="bi bi-emoji-laughing-fill" style="color: goldenrod; font-size: 2rem;"></i>
               </div>
               <div class="atoptext">
                 <h2>154</h2>
-                <p>Cases Won</p>
+                <p>Happy Clients</p>
               </div>
             </div>
           </div>
@@ -168,11 +162,12 @@
           <div class="col-lg-3 col-6 position-relative mt-lg-0 mt-5">
             <div class="atopcard">
               <div class="atopimg">
-                <img src="web/images/WCU1.png" alt="" />
+                <!-- <img src="web/images/WCU1.png" alt="" /> -->
+                 <i class="bi bi-mortarboard-fill" style="color: goldenrod; font-size: 2rem;"></i>
               </div>
               <div class="atoptext">
                 <h2>154</h2>
-                <p>Cases Won</p>
+                <p>Skilled Lawyers</p>
               </div>
             </div>
           </div>
@@ -180,11 +175,12 @@
           <div class="col-lg-3 col-6 position-relative mt-lg-0 mt-5">
             <div class="atopcard">
               <div class="atopimg">
-                <img src="web/images/WCU1.png" alt="" />
+                <!-- <img src="web/images/WCU1.png" alt="" /> -->
+                 <i class="bi bi-award-fill" style="color: goldenrod; font-size: 2rem;"></i>
               </div>
               <div class="atoptext">
                 <h2>154</h2>
-                <p>Cases Won</p>
+                <p>Great Rewards</p>
               </div>
             </div>
           </div>
@@ -193,7 +189,7 @@
     </section>
 
     <!-- about us -->
-    <section class="aboutsec my-sm-5">
+    <section class="aboutsec my-sm-5 overflow-hidden" data-aos="fade-left">
       <div class="container py-5">
         <div class="row d-flex align-items-center justify-content-between">
           <div class="col-lg-6 px-xl-5">
@@ -207,6 +203,7 @@
               practice areas including corporate law, litigation, arbitration,
               real estate, intellectual property, and regulatory compliance.
             </p>
+              <button style="border: 2px solid black;"><span>Contact Now</span></button>
           </div>
           <div
             class="col-lg-6 mt-lg-0 mt-3 d-flex align-items-center justify-content-center"
@@ -223,7 +220,7 @@
       </div>
     </section>
     <!-- mission -->
-    <section class="my-5">
+    <section class="my-5 overflow-hidden" data-aos="fade-right">
       <div class="container py-sm-5">
         <div
           class="row d-flex align-items-center justify-content-center flex-lg-row flex-column-reverse"
@@ -250,6 +247,7 @@
                   relationships through transparent counsel and timely,
                   cost-effective solutions.
                 </p>
+                 <button ><span>Contact Now</span></button>
               </div>
             </div>
           </div>
@@ -257,7 +255,7 @@
       </div>
     </section>
     <!-- vision -->
-    <section class="my-5">
+    <section class="my-5 overflow-hidden" data-aos="fade-left">
       <div class="container py-sm-5">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-lg-6 visioncard">
@@ -271,6 +269,7 @@
                   benchmarks in the legal industry through innovation,
                   continuous learning, and community engagement.
                 </p>
+                 <button ><span>Contact Now</span></button>
               </div>
             </div>
           </div>
@@ -290,7 +289,7 @@
     </section>
 
     <!-- founder msg -->
-    <section class="aboutsec my-sm-5">
+    <section class="aboutsec my-sm-5 overflow-hidden " data-aos="fade-right">
       <div class="container py-5">
         <div class="row d-flex align-items-center justify-content-between">
           <div
@@ -312,6 +311,7 @@
               magni amet quam, soluta sapiente quia nisi voluptates perferendis
               itaque!
             </p>
+             <button style="border: 2px solid black;"><span>Contact Now</span></button>
           </div>
         </div>
       </div>
@@ -320,9 +320,9 @@
     
 
     <!-- faq -->
-    <section class="bg-dark py-5">
-      <div class="btmdes text-center">
-        <h1>Lorem, ipsum dolor.</h1>
+    <section class="bg-dark py-5 overflow-hidden" >
+      <div class="btmdes text-center" data-aos="fade-up">
+        <h1>Frequently Asked <span class="gdntext">Questions</span></h1>
         <p>FAQ's</p>
       </div>
       <div class="container">
@@ -411,66 +411,53 @@
 
     <!-- footer -->
     <footer class="my-5">
-      <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-          <div
-            class="col-lg-2 col-6 d-md-block d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="web/images/asglogo-removebg-preview.png"
-              class="img-fluid"
+          <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-lg-2 col-6 d-md-block d-flex align-items-center justify-content-center">
+                <img src="web/images/Equity_law_chambers-removebg-preview.png" class="img-fluid activecursor"
               alt=""
-            />
-          </div>
-          <div class="col-lg-7 mt-5 mt-lg-0">
-            <div class="icons d-flex align-items-center justify-content-center">
-              <i class="bi bi-telephone-fill"></i>
-              <i class="bi bi-envelope-fill"></i>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-whatsapp"></i>
-            </div>
-            <div class="mt-sm-5 mt-3">
-              <ul
-                class="qlinks d-flex align-items-center justify-content-sm-evenly justify-content-between"
-              >
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="practises.html">Services</a></li>
-                <!-- <li><a href="debtsettlement.html">Debt Settlement</a></li>
-              <li><a href="login.html">Login</a></li> -->
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-              <ul
-                class="qlinks mt-3 d-flex align-items-center justify-content-evenly"
-              >
-                <li><a href="debtsettlement.html">Debt Settlement</a></li>
-                <li><a href="login.html">Login</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 mt-5 mt-lg-0">
-            <div>
-              <p>
-                Shop no 106, Vpo Village Gadoli Khurd, Gurugram Haryana 122001.
-              </p>
-              <!-- <div >
+              onclick="location.href='index.html'">
+              </div>
+              <div class="col-lg-7 mt-5 mt-lg-0">
+                <div class="icons d-flex align-items-center justify-content-center">
+                  <i class="bi bi-telephone-fill activecursor" onclick="location.href='tel:+918368282220'"></i>
+                  <i class="bi bi-envelope-fill activecursor" onclick="location.href='mailto:contactus@asgadvocates.com'"></i>
+                  <i class="bi bi-instagram activecursor" onclick="location.href='//www.instagram.com/advocatesahilgandass?igsh=MXZua3pjaG12M2Z5MQ=='"></i>
+                  <i class="bi bi-whatsapp activecursor" onclick="location.href='//wa.me/918368282220'"></i>
+                </div>
+                <div class="mt-sm-5 mt-3">
+                  <ul class="qlinks d-flex align-items-center justify-content-sm-evenly justify-content-between" >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="practises.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                  <ul class="qlinks mt-3 d-flex align-items-center justify-content-evenly ">
+                    <li><a href="debtsettlement.html">Debt Settlement</a></li>
+                    <li><a href="#" onclick="showLogin()">Login</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 mt-5 mt-lg-0">
+                <div>
+                  <p>Shop no 106, Vpo Village Gadoli Khurd, Gurugram Haryana 122001.</p>
+                  <!-- <div >
                     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7016.634327622397!2d76.97553034280251!3d28.439854053081596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sShop%20no%20106%2C%20Vpo%20Village%20Gadoli%20Khurd%2C%20Gurugram%20Haryana%20122001.!5e0!3m2!1sen!2sus!4v1754029134532!5m2!1sen!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div> -->
-              <div class="ratio ratio-4x3">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7016.634327622397!2d76.97553034280251!3d28.439854053081596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sShop%20no%20106%2C%20Vpo%20Village%20Gadoli%20Khurd%2C%20Gurugram%20Haryana%20122001.!5e0!3m2!1sen!2sus!4v1754029134532!5m2!1sen!2sus"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                >
-                </iframe>
+                  <div class="ratio ratio-4x3">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7016.634327622397!2d76.97553034280251!3d28.439854053081596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sShop%20no%20106%2C%20Vpo%20Village%20Gadoli%20Khurd%2C%20Gurugram%20Haryana%20122001.!5e0!3m2!1sen!2sus!4v1754029134532!5m2!1sen!2sus"
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </footer>
+        </footer>
 
     <div class="cpyr">
       <a href="tssgtech.com"
@@ -535,5 +522,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
