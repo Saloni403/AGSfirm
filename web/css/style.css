@@ -17,8 +17,13 @@ ul{
 .activecursor{
   cursor: pointer;
 }
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body{
     background-color: #000;
+     max-width: 100%;
     color: #fff;
     overflow-x: hidden;
 }
