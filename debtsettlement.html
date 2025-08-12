@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link
+   <title>Document</title>
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="web/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 <body>
 
       <!-- header -->
@@ -107,7 +108,7 @@
 
 
     <!-- banner -->
-    <section class="smallbanner">
+    <section class="smallbanner" style="background-image: url(web/images/DS4.jpeg);">
         <div class="smallbannerdiv">
         <div class="container d-flex align-items-center justify-content-center flex-column">
           <div >
@@ -124,11 +125,45 @@ fear. </h6>
 
 <!-- common problem we handle -->
  <style>
-  .wcutext h4{
-    font-size: 1.25rem ;
-  }
+ .cmnprobcrd{
+  background-color: rgba(40, 39, 39, 0.789);
+ }
+ .cmnprobcrd:hover{
+  outline: 2px solid white;
+ }
+.cmnprobimg{
+  overflow: hidden;
+  position: relative;
+}
+.cmnprobimg img{
+transform: rotate(355deg) translateY(-20%) scale(1.15);
+}
+.cmnprobimg > div{
+position: absolute;
+ top: 0;
+  left: 0;
+   height: 100%;
+    width: 100%;
+   
+     transform: rotate(355deg) translateY(-20%) scale(1.15);
+}
+.cmnprobimg1 > div{
+ background-image: linear-gradient(to top right , rgba(166, 4, 166, 0.653), rgba(0, 0, 255, 0.527));
+}
+.cmnprobimg2 > div{
+ background-image: linear-gradient(to top right , rgba(0, 0, 255, 0.653), rgba(0, 255, 255, 0.527));
+}
+.cmnprobimg3 > div{
+ background-image: linear-gradient(to top right , rgba(0, 255, 255, 0.653), rgba(255, 0, 0, 0.527));
+}
+.cmnprobimg4 > div{
+ background-image: linear-gradient(to top right , rgba(255, 0, 0, 0.653), rgba(255, 166, 0, 0.527));
+}
+.cmnprobimg5 > div{
+ background-image: linear-gradient(to top right , rgba(255, 166, 0, 0.653), rgba(0, 128, 0, 0.527));
+}
  </style>
-     <section class="my-5 overflow-hidden ">
+     <section class="my-5 overflow-hidden " >
       <div class="container">
          <div class="btmdes text-center" data-aos="fade-up">
           <h1 >Common Problems <span class="gdntext">Common Problems We Handle</span></h1>
@@ -136,91 +171,65 @@ fear. </h6>
         </div>
         <div class="row  mt-3 gy-5">
           <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
-            <div class="wcucard">
-              <div class="position-relative divvv">
-              <div class="wcumg">
-                <img src="web/images/WCU1.png" alt="">
-              </div>
-              <div class="wcutext">
-                <h4>Secured Loans</h4>
-                <p class="px-3">Home, vehicle, or business loans with seizure threats.</p>
-              </div>
-              <div class="clrdiv">
-
-              </div>
-              </div>
+           <div class=" rounded cmnprobcrd">
+            <div  class="rounded cmnprobimg1 cmnprobimg">
+              <img src="web/images/DS1.jpg" class="img-fluid " alt="">
+              <div class=""></div>
             </div>
+            <div class="p-3 pt-0 cmnprobtxt">
+              <h5>Secured Loans</h5>
+              <p class="mb-0">Home, vehicle, or business loans with seizure threats.</p>
+              </div>
+           </div>
           </div>
-
-            <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
-            <div class="wcucard">
-              <div class="position-relative divvv">
-              <div class="wcumg">
-                <img src="web/images/WCU2.png" alt="">
-              </div>
-              <div class="wcutext">
-                <h4>Unsecured Loans</h4>
-                <p class="px-3">Credit card dues or personal loans with growing interest. </p>
-              </div>
-              <div class="clrdiv">
-
-              </div>
-              </div>
-            </div>
-          </div>
-
-            <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
-            <div class="wcucard">
-              <div class="position-relative divvv">
-              <div class="wcumg">
-                <img src="web/images/WCU3.png" alt="">
-              </div>
-              <div class="wcutext">
-                <h4> Debt Trap</h4>
-                <p class="px-3"> Juggling too many loans and running out of options.</p>
-              </div>
-              <div class="clrdiv">
-
-              </div>
-              </div>
-            </div>
-          </div>
-
-           <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
-            <div class="wcucard">
-              <div class="position-relative divvv">
-              <div class="wcumg">
-                <img src="web/images/WCU1.png" alt="">
-              </div>
-              <div class="wcutext">
-                <h4>Medical/Family Emergency</h4>
-                <p class="px-3"> Can't pay right now? We help you buy time legally. </p>
-              </div>
-              <div class="clrdiv">
-
-              </div>
-              </div>
-            </div>
-          </div>
-
           <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
-            <div class="wcucard">
-              <div class="position-relative divvv">
-              <div class="wcumg">
-                <img src="web/images/WCU1.png" alt="">
-              </div>
-              <div class="wcutext">
-                <h4>Harassment by Recovery Agents</h4>
-                <p class="px-3">Threats, calls, visits, defamation—we stop it all.</p>
-              </div>
-              <div class="clrdiv">
-
-              </div>
-              </div>
+           <div class=" rounded cmnprobcrd">
+            <div  class="rounded cmnprobimg2 cmnprobimg">
+              <img src="web/images/DS2.jpg" class="img-fluid " alt="">
+              <div class=""></div>
             </div>
+            <div class="p-3 pt-0 cmnprobtxt">
+              <h5>Secured Loans</h5>
+              <p class="mb-0">Home, vehicle, or business loans with seizure threats.</p>
+              </div>
+           </div>
           </div>
-
-           
+          <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
+           <div class=" rounded cmnprobcrd">
+            <div  class="rounded cmnprobimg3 cmnprobimg">
+              <img src="web/images/DS3.jpg" class="img-fluid " alt="">
+              <div class=""></div>
+            </div>
+            <div class="p-3 pt-0 cmnprobtxt">
+              <h5>Secured Loans</h5>
+              <p class="mb-0">Home, vehicle, or business loans with seizure threats.</p>
+              </div>
+           </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
+           <div class=" rounded cmnprobcrd">
+            <div  class="rounded cmnprobimg4 cmnprobimg">
+              <img src="web/images/DS4.jpeg" class="img-fluid " alt="">
+              <div class=""></div>
+            </div>
+            <div class="p-3 pt-0 cmnprobtxt">
+              <h5>Secured Loans</h5>
+              <p class="mb-0">Home, vehicle, or business loans with seizure threats.</p>
+              </div>
+           </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up">
+           <div class=" rounded cmnprobcrd">
+            <div  class="rounded cmnprobimg5 cmnprobimg">
+              <img src="web/images/DS5.png" class="img-fluid " alt="">
+              <div class=""></div>
+            </div>
+            <div class="p-3 pt-0 cmnprobtxt">
+              <h5>Secured Loans</h5>
+              <p class="mb-0">Home, vehicle, or business loans with seizure threats.</p>
+              </div>
+           </div>
+          </div>
         </div>
       </div>
      </section>
@@ -245,8 +254,8 @@ guidelines. </p>
 <button style="border: 2px solid black;"><span>Contact Now</span></button>
           </div>
           <div class="col-lg-6 mt-lg-0 mt-3 d-flex align-items-center justify-content-center" data-aos="fade-left">
-            <div class="imgdiv" >
-              <img src="web/images/advocate9890.logowik.com_-removebg-preview.png" class="img-fluid" alt="">
+            <div class="" >
+              <img src="web/images/moneyControl.svg" class="img-fluid" alt="">
             </div>
           </div>
         </div>
@@ -263,6 +272,11 @@ guidelines. </p>
         </div>
        
         <div class="row mt-3 d-flex align-items-center justify-content-between">
+            <div class="col-lg-6 mt-lg-0 mt-3 d-flex align-items-center justify-content-center" data-aos="fade-left">
+            <div class="" >
+              <img src="web/images/Add-a-heading-1.webp" class="img-fluid" alt="">
+            </div>
+          </div>
           <div class="col-lg-6 px-xl-5 " data-aos="fade-right">
             <p>You don’t have to deal with it alone anymore. </p>
             <h2>How It Works:</h2>
@@ -276,15 +290,11 @@ guidelines. </p>
            <p><span style="color: red;">*</span> No more threats at work or home </p>
            <p><span style="color: red;">*</span> You stay protected, stress-free, and in control </p>
            <i>This service is included with our legal representation package. Fast setup. Total peace. </i>
-           <div>
+           <div class="mt-2">
 <button style="border: 2px solid black;"><span>Contact Now</span></button>
            </div>
           </div>
-          <div class="col-lg-6 mt-lg-0 mt-3 d-flex align-items-center justify-content-center" data-aos="fade-left">
-            <div class="imgdiv" >
-              <img src="web/images/advocate9890.logowik.com_-removebg-preview.png" class="img-fluid" alt="">
-            </div>
-          </div>
+        
         </div>
       </div>
     </section>
@@ -298,7 +308,8 @@ guidelines. </p>
     <!-- our process -->
 <style>
   .opcscrd{
-    background-color: goldenrod;
+    background-color: rgba(218, 165, 32,1);
+    border: 2px solid white;
     /* color: black; */
     padding: 1rem;
     text-align: center;
@@ -570,7 +581,10 @@ Book Your Free Consultation Now
     <script src="web/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
