@@ -115,7 +115,8 @@ button span{
     background-color:black ;
     color: #fff;
     width: 50%;
- height: 98%;
+ /* height: fit-content; */
+ /*  */
  padding: 2rem;
   border-radius: 20px;
   border: 2px solid white;
@@ -132,6 +133,7 @@ button span{
      height:98%;
      padding: 2rem 0.75rem;
       overflow-y: scroll;
+      font-size: 14px;
     }  
 }
 .instclose{
@@ -858,3 +860,70 @@ padding-right: 0.5rem;
  font-size: 0.75rem;
 }
 }
+
+
+
+
+
+
+
+
+/* debt settlement */
+ .cmnprobcrd{
+  background-color: rgba(40, 39, 39, 0.789);
+ }
+ .cmnprobcrd:hover{
+  outline: 2px solid white;
+ }
+.cmnprobimg{
+  overflow: hidden;
+  position: relative;
+}
+.cmnprobimg img{
+transform: rotate(355deg) translateY(-20%) scale(1.15);
+}
+.cmnprobimg > div{
+position: absolute;
+ top: 0;
+  left: 0;
+   height: 100%;
+    width: 100%;
+   
+     transform: rotate(355deg) translateY(-20%) scale(1.15);
+}
+.cmnprobimg1 > div{
+ background-image: linear-gradient(to top right , rgba(166, 4, 166, 0.653), rgba(0, 0, 255, 0.527));
+}
+.cmnprobimg2 > div{
+ background-image: linear-gradient(to top right , rgba(0, 0, 255, 0.653), rgba(0, 255, 255, 0.527));
+}
+.cmnprobimg3 > div{
+ background-image: linear-gradient(to top right , rgba(0, 255, 255, 0.653), rgba(255, 0, 0, 0.527));
+}
+.cmnprobimg4 > div{
+ background-image: linear-gradient(to top right , rgba(255, 0, 0, 0.653), rgba(255, 166, 0, 0.527));
+}
+.cmnprobimg5 > div{
+ background-image: linear-gradient(to top right , rgba(255, 166, 0, 0.653), rgba(0, 128, 0, 0.527));
+}
+.cmnprobtxt{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+
+
+/* our process */
+ .opcscrd{
+    background-color: rgba(218, 165, 32,1);
+    border: 2px solid white;
+    /* color: black; */
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
+  }
